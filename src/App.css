@@ -1,0 +1,699 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 19s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 19px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.horse {
+  background: url("../static/horse-head.svg");
+  background-size: 96%;
+  background-color: gray;
+  padding: 19px 19px;
+  margin: auto;
+}
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 19px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  margin: auto;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  color: blue;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  left: 28%;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.square3 {
+  color: red;
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  left: 28%;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.square2 {
+  background: white;
+  border: 1px solid white;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+}
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  /*display: flex;*/
+  flex-direction: row;
+  margin:auto;
+  text-align: center;
+}
+
+.game-info {
+  margin: auto;
+}
+.winner{
+  background-color: #0da000;
+}
+.normal{
+  padding: 19px 19px;
+  background-color: gray;
+}
+.up{
+  margin: auto;
+}
+.cell{
+  padding: 30px 30px;
+  margin: auto;
+}
+.died{
+  padding: 19px 19px;
+  margin: auto;
+  background-color: red;
+}
+.red{
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  left: 28%;
+  position: relative;
+
+  
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+.inp{
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+}
+.inp2{
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
+}
+.snake2{
+  background: green;
+  border: 1px solid green;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+}
+.food {
+  background: red;
+  border: 1px solid red;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+.squareline {
+  background: green;
+  border: 1px solid green;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+}
+.snakehead {
+  background: green;
+  border: 1px solid green;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 20% / 50%;
+}
+.tank1 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/tank-up.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.tank2 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/tank-right.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.tank3 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/tank-down.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.tank4 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/tank-left.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.square22 {
+  background: white;
+  border: 1px solid white;
+  float: left;
+  left:10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 20px;
+}
+.squareline2 {
+  background: green;
+  border: 1px solid green;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 10px;
+}
+.squareline4 {
+  background: green;
+  border: 1px solid green;
+  float: left;
+  right:23px;
+  position: absolute;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 10px;
+
+}
+.squareline3 {
+  background: green;
+  border: 1px solid green;
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  padding: 10px 20px;
+}
+.bullet1 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/bullet-up.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.bullet2 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/bullet-right.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.bullet3 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/bullet-down.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.bullet4 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/bullet-left.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemy1 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-up.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemy2 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-right.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemy3 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-down.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemy4 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-left.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemybullet1 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-bulletup.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemybullet2 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-bulletright.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemybullet3 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-bulletdown.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.enemybullet4 {
+  float: left;
+  left: 10%;
+  position: relative;
+  font-weight: bold;
+  line-height: 34px;
+  margin: auto;
+  text-align: center;
+  background: url("../static/enemy-bulletleft.png");
+  background-size: 100%;
+  padding: 19px 19px;
+}
+.inpstyle {
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
+}
+.inpstyle:hover
+{
+    background-color: yellow;
+}
+@keyframes abcd
+{
+  25%  {background-color: yellow}
+  50%  {background-color: white}
+  75%  {background-color: red}
+  100% {background-color: lime}
+}
+.abc
+{
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  position: relative;
+  animation-name: abcd;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.cancome
+{
+  padding: 19px 19px;
+  background-color: green;
+}
+.butn
+{
+  width: 16px;
+  height : 16px;
+  padding: 0px;
+  background: #595959;
+  border-color: green;
+}
+.num1
+{
+  width: 16px;
+  height : 16px;
+  color: blue;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num2
+{
+  width: 16px;
+  height : 16px;
+  color: green;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num3
+{
+  width: 16px;
+  height : 16px;
+  color: red;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num4
+{
+  width: 16px;
+  height : 16px;
+  color: #00004d;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num5
+{
+  width: 16px;
+  height : 16px;
+  color:#990000;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num6
+{
+  width: 16px;
+  height : 16px;
+  color:#00b3b3;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num7
+{
+  width: 16px;
+  height : 16px;
+  color:black;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num8
+{
+  width: 16px;
+  height : 16px;
+  color:gray;
+  padding: 0px;
+  font-size: 11px;
+  font-weight: 900;
+  background: #8c8c8c;
+  border-color: white;
+}
+.num0
+{
+  width: 16px;
+  height : 16px;
+  padding: 0px;
+  background: #8c8c8c;
+  border-color: white;
+}
+.flag
+{
+  background: url("../static/flag.png");
+  background-size: 100%;
+  padding: 0px;
+  width: 16px;
+  height : 16px;
+}
+.num10
+{
+  background: url("../static/mine.png");
+  background-size: 100%;
+  padding: 0px;
+  width: 16px;
+  height : 16px;
+}
+.critical
+{
+  background: url("../static/mine_explosion.png");
+  background-size: 100%;
+  padding: 0px;
+  width: 16px;
+  height : 16px;
+}
+.detected
+{
+  background: url("../static/mine-detected.png");
+  background-size: 100%;
+  padding: 0px;
+  width: 16px;
+  height : 16px;
+}
+.modall {
+  
+    visibility: hidden; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    padding-left: 100px;
+    width: 100%; /* Full width */
+    height:100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #8c8c8c;
+}
+.modall-state
+{
+  display: none;
+}
+.modall-state:checked + .modall {
+  visibility: visible;
+}
+.modall-state:checked + .modall3 {
+  visibility: visible;
+}
+.modall2
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+
+}
+.modall3 {
+  
+  position: fixed; /* Stay in place */
+
+  width: 80%; /* Full width */
+  height:60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:  white; /* Fallback color */
+}
+/* Modal Content */
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.blabel
+{
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  position: absolute;
+  right: 100px;
+  background: #00e600;
+  cursor: pointer;
+}
+.blabel:hover
+{
+  background: #66ff66;
+}
+.btn1
+{
+  width: 40px;
+  height : 40px;
+  background-color: white;
+  /* border: 10px; */
+  font-weight: bold;
+}
