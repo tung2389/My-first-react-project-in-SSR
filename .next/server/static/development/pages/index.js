@@ -1084,10 +1084,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../test.css */ "./test.css");
-/* harmony import */ var _test_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_test_css__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/tung2389/Desktop/react-js-1/pages/index.js";
-
+var _jsxFileName = "/home/tung2389/something/react-js-1/pages/index.js";
 
 
 var apps = ["App-chess", "App-catchthebutton", "App-easyform", "App-firstreactprogram", "App-makeimagerun", "App-makeletterrun", "App-tank", "App-targetcharacter", "App-targetnumber", "App-tic-tac-toe", "App-tic-tac-toe(smarter)", "Minesweeper", "Simple_caculator", "snake", "Sudoku_Solver"];
@@ -1134,17 +1131,6 @@ function Home() {
 
 /***/ }),
 
-/***/ "./test.css":
-/*!******************!*\
-  !*** ./test.css ***!
-  \******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
@@ -1152,7 +1138,7 @@ function Home() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/tung2389/Desktop/react-js-1/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/tung2389/something/react-js-1/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

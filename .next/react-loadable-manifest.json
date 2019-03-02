@@ -7,32 +7,18 @@
       "publicPath": "static/chunks/0.js"
     }
   ],
-  "../test.css": [
+  "./App.css": [
     {
-      "id": "./test.css",
-      "name": "./test.css",
+      "id": "./src/App.css",
+      "name": "./src/App.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }
   ],
   "undefined": [
     {
-      "id": 5,
-      "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    },
-    {
       "id": 2,
       "name": null,
-      "file": "static/chunks/styles.js",
-      "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "../src/App.css": [
-    {
-      "id": "./src/App.css",
-      "name": "./src/App.css",
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
     }

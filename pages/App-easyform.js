@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../src/App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class App_easyform extends React.Component{
   constructor(props)
   {
