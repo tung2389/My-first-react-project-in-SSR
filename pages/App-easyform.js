@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import '../src/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App_easyform extends React.Component{
   constructor(props)
@@ -33,6 +33,10 @@ class App_easyform extends React.Component{
   render()
   {
     return(
+        <div>
+        <Head>
+        <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+        </Head>
         <div className="container">
             
             <div className="row">
@@ -106,6 +110,7 @@ class App_easyform extends React.Component{
                 </div>
             </div>
             
+        </div>
         </div>
         );
     }
