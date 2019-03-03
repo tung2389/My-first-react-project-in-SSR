@@ -30,11 +30,7 @@ function random(min,max)
   let r=Math.random();
   return Math.floor(r*max+min);
 }
-window.addEventListener('keydown',this.check,false);
-function check(e)
-{
-  alert(e.keyCode);
-}
+
 class App_targetcharacter extends Component {
   constructor(props)
   {
@@ -48,7 +44,6 @@ class App_targetcharacter extends Component {
   }
   check(event)
   {
-    alert(event.keyCode);
     if(this.state.start)
     {
     if(event.keyCode===this.state.char)
@@ -106,6 +101,7 @@ class App_targetcharacter extends Component {
   }
   componentDidMount()
   {
+    window.addEventListener("keypress",this.check,false);
     setInterval(this.display,1000);
     setInterval(this.countdown,1000);
   }
@@ -115,8 +111,6 @@ class App_targetcharacter extends Component {
   }
   render()
   {
-    if(this.state.start)
-    window.addEventListener("keypress",this.check,false);
     let hstyle = {
       color:this.state.color,
       fontSize:60

@@ -15,7 +15,7 @@
     "webpack": "^4.29.6"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   }

@@ -41,6 +41,11 @@ class Minesweeper extends React.Component{
     this.dfs=this.dfs.bind(this);
     this.make_dfs=this.make_dfs.bind(this);
   }
+  componentDidMount(){
+    window.addEventListener('contextmenu', function(evt) { 
+      evt.preventDefault();
+    }, false);
+  }
   make_dfs(x,y)
   {
     let n = this.state.n;
@@ -264,9 +269,6 @@ class Minesweeper extends React.Component{
     this.setState({hard:hard});
   }
   render(){
-    window.addEventListener('contextmenu', function(evt) { 
-      evt.preventDefault();
-    }, false);
     let squares=this.state.squares.slice();
     let status=this.state.status.slice();
     let n = this.state.n;

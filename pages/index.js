@@ -1,20 +1,17 @@
 import Link from 'next/link';
-
+import '../src/App.css';
 let apps = ["App-chess","App-catchthebutton","App-easyform","App-firstreactprogram","App-makeimagerun","App-makeletterrun","App-tank","App-targetcharacter","App-targetnumber","App-tic-tac-toe","App-tic-tac-toe(smarter)","Minesweeper","Simple_caculator","snake","Sudoku_Solver"];
 const all_apps = apps.map(single_app => {
     return (
-        <div>
-        <Link href = {"/" + single_app}>
-            <a>{single_app}</a>
+        <Link key = {single_app} href = {"/" + single_app}>
+        <button className = "btn_link">{single_app}</button>
         </Link>
-        <br/>
-        </div>
     );
 })
 function Home(){
     
     return (
-        <div>
+        <div >
             {all_apps}
         </div>
     );

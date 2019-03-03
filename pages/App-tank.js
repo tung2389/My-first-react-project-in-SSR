@@ -654,10 +654,10 @@ class App_tank extends React.Component {
     componentDidMount()
     {
         this.enemymove=setInterval(this.EnemyMove,1000);
+        window.addEventListener("keydown",this.changedir,false);
     }
     render()
     {
-    window.addEventListener("keydown",this.changedir,false);
     return (
         <div>
             <h1 align='center'>Health:{this.state.health}</h1>

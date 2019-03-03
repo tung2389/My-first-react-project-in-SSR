@@ -712,3 +712,14 @@ ol, ul {
   color: lime;
   border: hidden;
 }
+.btn_link{
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  border-color: blue;
+  transition: 0.5s;
+}
+.btn_link:hover{
+  color: white;
+  background-color: blue;
+}

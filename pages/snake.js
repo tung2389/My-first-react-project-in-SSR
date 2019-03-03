@@ -50,6 +50,9 @@ class App_snake extends React.Component{
     this.isSnakeDied=this.isSnakeDied.bind(this);
     this.start=this.start.bind(this);
   }
+  componentDidMount(){
+    window.addEventListener("keypress",this.changedir,false);
+  }
   start()
   {
     if(this.state.start===false)
@@ -224,7 +227,6 @@ class App_snake extends React.Component{
   }
   render()
   {
-    window.addEventListener("keypress",this.changedir,false);
     return(
       <div>
         <div align='center'><button onClick={this.start}>Start</button></div>
