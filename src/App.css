@@ -723,3 +723,7 @@ ol, ul {
   color: white;
   background-color: blue;
 }
+.test{
+  float:left;
+  padding: 1px 1px 1px 1px;
+}

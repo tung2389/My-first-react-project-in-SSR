@@ -1,9 +1,22 @@
 const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 module.exports = withCSS(withImages({
-    webpack: (config, options) => {
-        console.log(config);
-        return config;
-     } 
+    webpack: (config) => {
+        config.plugins.push(
+          new SWPrecacheWebpackPlugin({
+            verbose: true,
+            staticFileGlobsIgnorePatterns: [/\.next\//],
+            runtimeCaching: [
+              {
+                handler: 'networkFirst',
+                urlPattern: /^https?.*/
+              }
+            ]
+          })
+        )
+    
+        return config
+    }
 }));
