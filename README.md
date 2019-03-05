@@ -4,3 +4,5 @@ heroku-postbuild": "next build
 ```
 
 - Demo: https://reactjs-ssr.herokuapp.com/
+
+- Note: this code can only uses serviceWorker when npm run build. npm start won't make it work.
