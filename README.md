@@ -47,6 +47,13 @@ heroku-postbuild": "next build
       'process.env.BACKEND_URL': prod ? '/Reactjs-SSR' : ''
     }
     ```
+  Then, change any <Link> in index.js into:
+    ```
+    <Link key = {single_app} href = {"/" + single_app} as={ process.env.BACKEND_URL + '/' + single_app}>
+      //something
+    </Link>
+    ```
+  
   Next, you must "run npm install --save-dev babel-plugin-transform-define" 
   Finally, add the .babelrc.js:
     ```
