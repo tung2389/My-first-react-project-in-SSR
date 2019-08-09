@@ -230,7 +230,7 @@ class App_snake extends React.Component{
     return(
       <div>
         <div align='center'><button onClick={this.start}>Start</button></div>
-        <div align='center'>Your Score:{(snakelength-1)*100}</div>
+        <div align='center'>Use "W,A,S,D" keys to move. Your Score:{(snakelength-1)*100}</div>
         {this.state.boardsn}
       </div>
     );

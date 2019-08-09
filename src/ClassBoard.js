@@ -39,7 +39,7 @@ class Board extends React.Component
                 let y = j;
                 subarray.push(this.renderSquare(x,y));
             }
-            array.push(<div key={i}>{subarray}</div>);
+            array.push(<div className="strictLine" key={i}>{subarray}</div>);
         }
         return array;
     }

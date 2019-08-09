@@ -496,7 +496,7 @@ ol, ul {
   height : 16px;
   color: blue;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -507,7 +507,7 @@ ol, ul {
   height : 16px;
   color: green;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -518,7 +518,7 @@ ol, ul {
   height : 16px;
   color: red;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -529,7 +529,7 @@ ol, ul {
   height : 16px;
   color: #00004d;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -540,7 +540,7 @@ ol, ul {
   height : 16px;
   color:#990000;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -551,7 +551,7 @@ ol, ul {
   height : 16px;
   color:#00b3b3;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -562,7 +562,7 @@ ol, ul {
   height : 16px;
   color:black;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -573,7 +573,7 @@ ol, ul {
   height : 16px;
   color:gray;
   padding: 0px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   background: #8c8c8c;
   border-color: white;
@@ -581,7 +581,7 @@ ol, ul {
 .num0
 {
   width: 16px;
-  height : 16px;
+  height : 15px;
   padding: 0px;
   background: #8c8c8c;
   border-color: white;
@@ -601,7 +601,7 @@ ol, ul {
   background-size: 100%;
   padding: 0px;
   width: 16px;
-  height : 16px;
+  height : 15px;
 }
 .critical
 {
@@ -609,7 +609,7 @@ ol, ul {
   background-size: 100%;
   padding: 0px;
   width: 16px;
-  height : 16px;
+  height : 15px;
 }
 .detected
 {
@@ -617,7 +617,7 @@ ol, ul {
   background-size: 100%;
   padding: 0px;
   width: 16px;
-  height : 16px;
+  height : 15px;
 }
 .modall {
   
@@ -689,6 +689,9 @@ ol, ul {
 .blabel:hover
 {
   background: #66ff66;
+}
+.strictLine {
+  line-height: 1;
 }
 .btn1
 {
