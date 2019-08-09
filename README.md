@@ -55,7 +55,7 @@ heroku-postbuild": "next build
     ```
   
   Next, you must "run npm install --save-dev babel-plugin-transform-define" 
-  Finally, add the .babelrc.js:
+  Then, add the .babelrc.js:
     ```
     const env = require('./env-config')
 
@@ -68,6 +68,9 @@ heroku-postbuild": "next build
       ]
     }
     ```
+    
+    Finally, add ```.nojekyll``` file in the root of out folder to prevent jekyll from by passing the _next folder.
+    
   You can also add this script to your package.json file in order to deploy faster:
     ```
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -     m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
