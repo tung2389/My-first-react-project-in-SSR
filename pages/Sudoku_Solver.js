@@ -256,7 +256,7 @@ solve()
     }
     return(
       <div align='center'>
-      <h1>Sudoku solver - Created by <a href="https://www.facebook.com/profile.php?id=100006826129122">Lưu Khánh Tùng</a> from HSGS </h1>
+      <h1>Sudoku solver - Created by <a href="https://github.com/tung2389">Tung Luu</a> from HSGS </h1>
       <button className="abc" onClick={this.solve}>Solve</button>
       <button className="abc" onClick={this.restart}>Restart</button>
       <div className="game">{board}</div>

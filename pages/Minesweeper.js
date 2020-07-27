@@ -276,7 +276,7 @@ class Minesweeper extends React.Component{
 
     return(
       <div align = 'center'>
-       <h6>Minesweeper - Created by <a href="https://www.facebook.com/profile.php?id=100006826129122">Lưu Khánh Tùng</a> from HSGS </h6>
+       <h6>Minesweeper - Created by <a href="https://github.com/tung2389">Tung Luu</a> from HSGS </h6>
         <button onClick={this.start}>Start</button>
         <button onClick={this.restart}>Restart</button>
         <label className = "blabel" htmlFor = "modal-1">Notes</label>

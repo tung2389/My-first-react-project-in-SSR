@@ -97,7 +97,7 @@ class Simple_caculator extends Component {
     }
     return (
       <div align = "center">
-         <h1>Simple caculator created by <a href="https://www.facebook.com/profile.php?id=100006826129122"><font color="green">Lưu Khánh Tùng</font></a> from HSGS</h1>
+         <h1>Simple caculator created by <a href="https://github.com/tung2389"><font color="green">Tung Luu</font></a> from HSGS</h1>
          <input style={style} className = "inpstyle2" value = {this.state.expression}></input>
         <Board n={6} m ={4} square = {square} onClick = {(x,y) => this.ClickEvent(x,y)}/>
       </div>

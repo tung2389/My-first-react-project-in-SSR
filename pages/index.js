@@ -1,6 +1,22 @@
 import Link from 'next/link';
 import '../src/App.css';
-let apps = ["App-chess","App-catchthebutton","App-easyform","App-firstreactprogram","App-makeimagerun","App-makeletterrun","App-tank","App-targetcharacter","App-targetnumber","App-tic-tac-toe","App-tic-tac-toe(smarter)","Minesweeper","Simple_caculator","snake","Sudoku_Solver"];
+let apps = [
+    "Minesweeper",
+    "Simple_caculator",
+    "App-tic-tac-toe",
+    "snake",
+    "Sudoku_Solver",
+    "App-chess",
+    "App-targetnumber",
+    "App-tic-tac-toe(smarter)",
+    "App-targetcharacter",
+    "App-tank",
+    "App-catchthebutton",
+    "App-easyform",
+    "App-firstreactprogram",
+    "App-makeimagerun",
+    "App-makeletterrun",
+];
 import React from 'react';
 const all_apps = apps.map(single_app => {
     return (
