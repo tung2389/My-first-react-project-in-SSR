@@ -21,7 +21,7 @@ import React from 'react';
 const all_apps = apps.map(single_app => {
     return (
         <div className = "test">
-        <Link key = {single_app} href = {"/" + single_app} as={ process.env.BACKEND_URL + '/' + single_app}>
+        <Link key = {single_app} href = {"/" + single_app} as={ process.env.BACKEND_URL + '/' + single_app} prefetch>
         <button className = "btn_link">{single_app}</button>
         </Link>
         </div>

@@ -72,4 +72,6 @@ heroku-postbuild": "next build
     ```
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -     m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
     ```
+
+  - Finally, when upload the 'out' folder to gh-pages, remember to add '.nojekyll' file so that the gh-page can be rendered properly.
 Source: https://github.com/thierryc/Next-gh-page-example
